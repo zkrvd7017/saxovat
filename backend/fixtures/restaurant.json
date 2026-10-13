@@ -1,0 +1,853 @@
+[
+{
+  "model": "api.menuitem",
+  "pk": 12,
+  "fields": {
+    "title": "Салат Candy",
+    "category": "Салаты",
+    "price": "85000.00",
+    "image_url": "/media/uploads/195f231974ab484e8a7d67b1a78bffce.jpg",
+    "prep_time": 15,
+    "is_new": false,
+    "description": "Бон филе, Манговый соус, Манго"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 13,
+  "fields": {
+    "title": "Салат сева",
+    "category": "Салаты",
+    "price": "60000.00",
+    "image_url": "/media/uploads/7485509d13514610a18b52dbcae44c5b.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "Авокадо  • Кедровые орехи  • Заправка"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 14,
+  "fields": {
+    "title": "Салат Цезарь с Курицей",
+    "category": "Салаты",
+    "price": "45000.00",
+    "image_url": "/media/uploads/215342eee42242159eb5f3b893e50aa0.jpg",
+    "prep_time": 20,
+    "is_new": false,
+    "description": "Сыр Пармезан, Хрустящие сухарики"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 15,
+  "fields": {
+    "title": "Салат с хрустящим баклажаном",
+    "category": "Салаты",
+    "price": "50000.00",
+    "image_url": "/media/uploads/3d369fd7828b461ebab43bd2a4855683.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "• Хрустящий баклажан"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 16,
+  "fields": {
+    "title": "Салат с рукколой и моцареллой",
+    "category": "Салаты",
+    "price": "50000.00",
+    "image_url": "/media/uploads/3284732cfe7f4d79950e5ccb589374d6.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "• Огурцы  • Сыр моцарелла  • Апельсин"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 17,
+  "fields": {
+    "title": "Мужской Каприз",
+    "category": "Салаты",
+    "price": "55000.00",
+    "image_url": "/media/uploads/4066fc8624804ff7baf5456ff9169a55.jpg",
+    "prep_time": 15,
+    "is_new": false,
+    "description": "Колбаса, Твёрдый сыр, Говяжий язык"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 18,
+  "fields": {
+    "title": "Салат с грибами и омлетом",
+    "category": "Салаты",
+    "price": "50000.00",
+    "image_url": "/media/uploads/d7bb9ea8dfe349faa49209a2295fefd1.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "Салат  • Говядина  • Маринованные"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 19,
+  "fields": {
+    "title": "Греческий Салат",
+    "category": "Салаты",
+    "price": "50000.00",
+    "image_url": "/media/uploads/283a2eb3bcd740368bbb8562d60097a0.jpg",
+    "prep_time": 20,
+    "is_new": false,
+    "description": "Помидоры, Огурцы, Болгарский перец"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 20,
+  "fields": {
+    "title": "Японский салат",
+    "category": "Салаты",
+    "price": "45000.00",
+    "image_url": "/media/uploads/5806b6df6bef414db3d0d8b3a16c173a.jpg",
+    "prep_time": 20,
+    "is_new": false,
+    "description": "Говядина (жаренная или  маринованная)"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 21,
+  "fields": {
+    "title": "Аппитито",
+    "category": "Салаты",
+    "price": "45000.00",
+    "image_url": "/media/uploads/62f414603203414cb5b9b97f716dbaae.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "• Говядина • Красный лук   • Зелень"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 22,
+  "fields": {
+    "title": "Свежий салат",
+    "category": "Салаты",
+    "price": "25000.00",
+    "image_url": "/media/uploads/d190156c91b7454f9096b14c409531b5.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "• Помидоры  • Огурцы  • Красный лук"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 23,
+  "fields": {
+    "title": "Borsh",
+    "category": "Первое блюдо",
+    "price": "29000.00",
+    "image_url": "/media/uploads/0b3006add9e14a06896de5e66194c1a0.jpg",
+    "prep_time": 10,
+    "is_new": false,
+    "description": "Gósht,karam,lavlagi"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 24,
+  "fields": {
+    "title": "Лапша",
+    "category": "Первое блюдо",
+    "price": "25000.00",
+    "image_url": "/media/uploads/b8de7a4e15a6415596bf7fb4142c131a.jpg",
+    "prep_time": 20,
+    "is_new": false,
+    "description": "Лапша с курицей"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 25,
+  "fields": {
+    "title": "Лапша",
+    "category": "Первое блюдо",
+    "price": "30000.00",
+    "image_url": "/media/uploads/0486ed0ad2704798827319b5424bdf44.jpg",
+    "prep_time": 20,
+    "is_new": false,
+    "description": "Лапша с фрикадельками"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 26,
+  "fields": {
+    "title": "Мастава",
+    "category": "Первое блюдо",
+    "price": "30000.00",
+    "image_url": "/media/uploads/7222dabdc2294056b2f284c8767ca2e9.jpg",
+    "prep_time": 15,
+    "is_new": false,
+    "description": "Мастава с зеленью"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 27,
+  "fields": {
+    "title": "Суп",
+    "category": "Первое блюдо",
+    "price": "35000.00",
+    "image_url": "/media/uploads/2389a3085b1349e8a5c1fb8683dee242.jpg",
+    "prep_time": 20,
+    "is_new": false,
+    "description": "Суп Шейх"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 28,
+  "fields": {
+    "title": "Balaneza Lapsha",
+    "category": "Второе блюдо",
+    "price": "50000.00",
+    "image_url": "/media/uploads/368bcdde656d4f2496c0937ab635f177.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "firminniy farsh,firminni sous,chisnok"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 29,
+  "fields": {
+    "title": "Myasa gribami",
+    "category": "Второе блюдо",
+    "price": "70000.00",
+    "image_url": "/media/uploads/5da6b505fb6f4f89ae6136891e885f73.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "Gósht,gribi,slivka"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 30,
+  "fields": {
+    "title": "Картофел по дамашнему",
+    "category": "Второе блюдо",
+    "price": "70000.00",
+    "image_url": "/media/uploads/e18c642828f4489a99eaa34096982e36.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "Гушт, дамашни картофел , чиснок"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 31,
+  "fields": {
+    "title": "Candy blyuda",
+    "category": "Второе блюдо",
+    "price": "75000.00",
+    "image_url": "/media/uploads/ae64aff963374740ad57c9559d9cf853.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "Gósht,qizil piyoz,damashni kartoshka 2"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 32,
+  "fields": {
+    "title": "Myasa po kitayski",
+    "category": "Второе блюдо",
+    "price": "75000.00",
+    "image_url": "/media/uploads/360b4e7c8dcb4c84b4c8d2bcaaa28de2.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "Gósht, svetafor balgar, firminniy sous"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 33,
+  "fields": {
+    "title": "Candy тобака",
+    "category": "Второе блюдо",
+    "price": "100000.00",
+    "image_url": "/media/uploads/448b463c3ab340b7bd92905a01eec73d.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "вкусно"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 34,
+  "fields": {
+    "title": "Candy tovuq qizilcha",
+    "category": "Второе блюдо",
+    "price": "100000.00",
+    "image_url": "/media/uploads/1eab4d1f85b84a989633c30f8a900ef1.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "1 porst"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 35,
+  "fields": {
+    "title": "Бризоль",
+    "category": "Второе блюдо",
+    "price": "65000.00",
+    "image_url": "/media/uploads/9501487f62c0454197e62476d34b67cc.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "Вкусно"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 36,
+  "fields": {
+    "title": "Бефстроганов",
+    "category": "Второе блюдо",
+    "price": "65000.00",
+    "image_url": "/media/uploads/7e78769384eb41bb821016359dbdfe7c.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "Мяса с грибами"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 37,
+  "fields": {
+    "title": "Баварский котлет",
+    "category": "Второе блюдо",
+    "price": "45000.00",
+    "image_url": "/media/uploads/99177d6c42264aeb91d06af46670373f.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "1шт"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 38,
+  "fields": {
+    "title": "Сковорода с говядиной",
+    "category": "Второе блюдо",
+    "price": "75000.00",
+    "image_url": "/media/uploads/15c2085805bc4f8296eedf295ce84246.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "Вкусно"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 39,
+  "fields": {
+    "title": "Кизилча",
+    "category": "Второе блюдо",
+    "price": "250000.00",
+    "image_url": "/media/uploads/4180a36259444543801925bf5f794936.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "1 кг  и  0,6 кг"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 40,
+  "fields": {
+    "title": "Сосиски барбекю",
+    "category": "Второе блюдо",
+    "price": "75000.00",
+    "image_url": "/media/uploads/c2dc71a249af4aaca7a22fa4bc53b380.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "Вкусно"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 41,
+  "fields": {
+    "title": "Острые крылья",
+    "category": "Candy tovuq qizilcha",
+    "price": "40000.00",
+    "image_url": "/media/uploads/a0f88b2aee744a7f839250d7572db243.jpg",
+    "prep_time": 20,
+    "is_new": false,
+    "description": "Крылышки острые"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 42,
+  "fields": {
+    "title": "Палочки",
+    "category": "Candy tovuq qizilcha",
+    "price": "30000.00",
+    "image_url": "/media/uploads/ff0aa9d516f14f15ae3d9b94d8f419ca.jpg",
+    "prep_time": 20,
+    "is_new": false,
+    "description": "Куриные палочки"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 43,
+  "fields": {
+    "title": "Палочки",
+    "category": "Candy tovuq qizilcha",
+    "price": "35000.00",
+    "image_url": "/media/uploads/8c7263e32bd5402ba11f1b0d21d83f20.jpg",
+    "prep_time": 15,
+    "is_new": false,
+    "description": "Сырные палочки"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 44,
+  "fields": {
+    "title": "Фри",
+    "category": "Candy tovuq qizilcha",
+    "price": "18000.00",
+    "image_url": "/media/uploads/6551638286db471baf7b8d43e46d5d83.jpg",
+    "prep_time": 20,
+    "is_new": false,
+    "description": "Жаренная картошка фри"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 45,
+  "fields": {
+    "title": "Бургер",
+    "category": "Candy tovuq qizilcha",
+    "price": "49000.00",
+    "image_url": "/media/uploads/9da6e8d77b1c4932912a1db3c14808d6.jpg",
+    "prep_time": 15,
+    "is_new": false,
+    "description": "Candy Burger"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 46,
+  "fields": {
+    "title": "Махито",
+    "category": "Холодные напитки",
+    "price": "55000.00",
+    "image_url": "/media/uploads/283326261016482baa32c9dfdb002d56.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "1 lt"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 47,
+  "fields": {
+    "title": "Яаблочное",
+    "category": "Холодные напитки",
+    "price": "35000.00",
+    "image_url": "/media/uploads/034ecfd564044e24a90aca00f36a5324.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "400ml"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 48,
+  "fields": {
+    "title": "Киви смузи",
+    "category": "Холодные напитки",
+    "price": "35000.00",
+    "image_url": "/media/uploads/4a782095dce847c6840d535fab05f030.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "400ml"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 49,
+  "fields": {
+    "title": "Малиновая смузи",
+    "category": "Холодные напитки",
+    "price": "35000.00",
+    "image_url": "/media/uploads/956cff25edf54c5a8d09020bf8c95bd5.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "400ml"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 50,
+  "fields": {
+    "title": "Клубничный смузи",
+    "category": "Холодные напитки",
+    "price": "35000.00",
+    "image_url": "/media/uploads/d95295d6d6034ecd904d3daacc1e454b.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "400ml"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 51,
+  "fields": {
+    "title": "Апельсиновое смузи",
+    "category": "Холодные напитки",
+    "price": "35000.00",
+    "image_url": "/media/uploads/7685a2116b8246999a395d191b49fba5.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "400ml"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 52,
+  "fields": {
+    "title": "Шоколадно милк шейк",
+    "category": "Холодные напитки",
+    "price": "35000.00",
+    "image_url": "/media/uploads/a8bdf6158bcc4e8095c1f97bf1397757.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "450ml"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 53,
+  "fields": {
+    "title": "Бананвй милк шейк",
+    "category": "Холодные напитки",
+    "price": "35000.00",
+    "image_url": "/media/uploads/f2cf941901654a5cacd16e4128c735ce.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "450ml"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 54,
+  "fields": {
+    "title": "Милк шейк",
+    "category": "Холодные напитки",
+    "price": "35000.00",
+    "image_url": "/media/uploads/7717da3aa7c046bf8eeead79ba9e3807.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "450ml"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 55,
+  "fields": {
+    "title": "Манго Маракуя",
+    "category": "Горячие напитки",
+    "price": "45000.00",
+    "image_url": "/media/uploads/9ea36571d5f54eb6b909c55f29e81fd7.jpg",
+    "prep_time": 20,
+    "is_new": false,
+    "description": "850 мл"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 56,
+  "fields": {
+    "title": "Чай Матча",
+    "category": "Горячие напитки",
+    "price": "40000.00",
+    "image_url": "/media/uploads/b35c7459e5ad4296b84d4ece4b62d799.jpg",
+    "prep_time": 20,
+    "is_new": false,
+    "description": "1 литр"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 57,
+  "fields": {
+    "title": "Императорский Тархун",
+    "category": "Горячие напитки",
+    "price": "35000.00",
+    "image_url": "/media/uploads/fdb7a6ac472e44cca00c5eba5f94305e.jpg",
+    "prep_time": 15,
+    "is_new": false,
+    "description": "850 мл"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 58,
+  "fields": {
+    "title": "Малина Имбирь",
+    "category": "Горячие напитки",
+    "price": "40000.00",
+    "image_url": "/media/uploads/ed44b014afd14dcb81f8020ad491f2f9.jpg",
+    "prep_time": 15,
+    "is_new": false,
+    "description": "850 мл"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 59,
+  "fields": {
+    "title": "Капучино",
+    "category": "Кофе",
+    "price": "25000.00",
+    "image_url": "/media/uploads/65da44b5ca904515a4c9625280847d5f.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "230ml"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 60,
+  "fields": {
+    "title": "Флет вайт",
+    "category": "Кофе",
+    "price": "30000.00",
+    "image_url": "/media/uploads/7fe8c3dfcda143fc9d2380e4f04a9ad4.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "320ml"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 61,
+  "fields": {
+    "title": "Еспресо",
+    "category": "Кофе",
+    "price": "20000.00",
+    "image_url": "/media/uploads/723eedf7e2c0420bb02964a20c6cde90.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "200ml"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 62,
+  "fields": {
+    "title": "Латте карамель сиропы",
+    "category": "Кофе",
+    "price": "25000.00",
+    "image_url": "/media/uploads/2448a3f612f4462c9ce588c323fd171e.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "350ml"
+  }
+},
+{
+  "model": "api.menuitem",
+  "pk": 63,
+  "fields": {
+    "title": "Раф",
+    "category": "Кофе",
+    "price": "30000.00",
+    "image_url": "/media/uploads/7f6e79afd85a4a6597358755b735ad10.jpg",
+    "prep_time": 5,
+    "is_new": false,
+    "description": "300ml"
+  }
+},
+{
+  "model": "api.menucategory",
+  "pk": 3,
+  "fields": {
+    "name": "Салаты",
+    "image_url": "/media/uploads/1bbe41a44fa44167bc378c9595367e9f.jpg",
+    "order": 0
+  }
+},
+{
+  "model": "api.menucategory",
+  "pk": 4,
+  "fields": {
+    "name": "Первое блюдо",
+    "image_url": "/media/uploads/cd42c08dfee34761bc3a94b4373ecf7e.jpg",
+    "order": 0
+  }
+},
+{
+  "model": "api.menucategory",
+  "pk": 5,
+  "fields": {
+    "name": "Второе блюдо",
+    "image_url": "/media/uploads/b81f53ae33a645e29708658c59e14374.jpg",
+    "order": 0
+  }
+},
+{
+  "model": "api.menucategory",
+  "pk": 6,
+  "fields": {
+    "name": "Candy tovuq qizilcha",
+    "image_url": "/media/uploads/ede59b3aa2e748c799ed40fd9b501530.jpg",
+    "order": 0
+  }
+},
+{
+  "model": "api.menucategory",
+  "pk": 7,
+  "fields": {
+    "name": "Холодные напитки",
+    "image_url": "/media/uploads/9088a9f703e04f4491aaae5314917e00.jpg",
+    "order": 0
+  }
+},
+{
+  "model": "api.menucategory",
+  "pk": 8,
+  "fields": {
+    "name": "Горячие напитки",
+    "image_url": "/media/uploads/dac9e661238d49aeb03005c0613aa0e5.jpg",
+    "order": 0
+  }
+},
+{
+  "model": "api.menucategory",
+  "pk": 9,
+  "fields": {
+    "name": "Десерты",
+    "image_url": "/media/uploads/9494f122603048f3adc33ed675a08b93.jpg",
+    "order": 0
+  }
+},
+{
+  "model": "api.menucategory",
+  "pk": 10,
+  "fields": {
+    "name": "Кофе",
+    "image_url": "/media/uploads/34f0b60e9cb84b68aa8829ae71d8ff9a.jpg",
+    "order": 0
+  }
+},
+{
+  "model": "api.story",
+  "pk": 1,
+  "fields": {
+    "title": "Yangi tortlar",
+    "image_url": "https://images.unsplash.com/photo-1551024506-0cb9a1dfeb1c?w=400&q=80",
+    "is_active": true,
+    "created_at": "2026-06-25T14:11:34.080Z"
+  }
+},
+{
+  "model": "api.story",
+  "pk": 2,
+  "fields": {
+    "title": "Ajoyib keksiklar",
+    "image_url": "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=400&q=80",
+    "is_active": true,
+    "created_at": "2026-06-25T14:11:34.080Z"
+  }
+},
+{
+  "model": "api.story",
+  "pk": 3,
+  "fields": {
+    "title": "Fransuz makaronlari",
+    "image_url": "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?w=400&q=80",
+    "is_active": true,
+    "created_at": "2026-06-25T14:11:34.080Z"
+  }
+},
+{
+  "model": "api.story",
+  "pk": 4,
+  "fields": {
+    "title": "Shveytsar shokoladlari",
+    "image_url": "https://images.unsplash.com/photo-1514517521153-1be72277b32f?w=400&q=80",
+    "is_active": true,
+    "created_at": "2026-06-25T14:11:34.080Z"
+  }
+},
+{
+  "model": "api.story",
+  "pk": 5,
+  "fields": {
+    "title": "Shirin ponchiklar",
+    "image_url": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&q=80",
+    "is_active": true,
+    "created_at": "2026-06-25T14:11:34.080Z"
+  }
+},
+{
+  "model": "api.story",
+  "pk": 6,
+  "fields": {
+    "title": "Shirinlik",
+    "image_url": "/media/uploads/8885ce7197d0420db7875a5cf12fafd3.webp",
+    "is_active": true,
+    "created_at": "2026-06-26T11:20:19.269Z"
+  }
+},
+{
+  "model": "api.shoplocation",
+  "pk": 1,
+  "fields": {
+    "name": "Saxovat",
+    "address": "Mo'ljal: Katta yangi marka tomonda",
+    "working_hours": "08:00 - 00:00",
+    "map_link": "",
+    "image_url": "/media/uploads/shop1.png"
+  }
+},
+{
+  "model": "api.menubanner",
+  "pk": 1,
+  "fields": {
+    "image_url": "http://127.0.0.1:8000/media/uploads/d555fdeb15524be0aec3fbb6b2e9a91c.webp",
+    "is_active": false
+  }
+},
+{
+  "model": "api.menubanner",
+  "pk": 2,
+  "fields": {
+    "image_url": "/media/uploads/6e6a6375e86b4353a2f8aeff1e5e711c.webp",
+    "is_active": false
+  }
+},
+{
+  "model": "api.menubanner",
+  "pk": 3,
+  "fields": {
+    "image_url": "/media/uploads/fc3745dd5a124e7f925261444d69af94.webp",
+    "is_active": false
+  }
+},
+{
+  "model": "api.menubanner",
+  "pk": 4,
+  "fields": {
+    "image_url": "/media/uploads/7e9dd70cbd5f4f5fbf18a34c4c33a6f2.webp",
+    "is_active": true
+  }
+}
+]

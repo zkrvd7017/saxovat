@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" role="img" aria-label="Saxovat">
+  <circle cx="40" cy="40" r="39" fill="#352b27"/>
+  <circle cx="40" cy="40" r="32" fill="none" stroke="#eabf95" stroke-width="1.5"/>
+  <circle cx="40" cy="40" r="28" fill="none" stroke="#eabf95" stroke-opacity=".45"/>
+  <text x="39" y="56" text-anchor="middle" font-family="Georgia, serif" font-size="49" font-style="italic" fill="#fffaf4">S</text>
+</svg>

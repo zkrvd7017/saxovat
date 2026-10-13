@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  samarkand_web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: samarkand_web
+    restart: unless-stopped
+    ports:
+      - "3302:3000"
+    environment:
+      - PORT=3000
+      - HOST=0.0.0.0
+    depends_on:
+      - samarkand-backend
+
+  samarkand-backend:
+    build:
+      context: ../the-samarkand-backend
+      dockerfile: Dockerfile
+    container_name: samarkand-backend
+    restart: unless-stopped
+    ports:
+      - "3301:8000"
+    volumes:
+      - ../the-samarkand-backend/db.sqlite3:/app/db.sqlite3
+      - ../the-samarkand-backend/media:/app/media
