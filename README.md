@@ -41,6 +41,19 @@ Bosh sahifadagi **Saxovat** nomini bosib ham admin loginni ochish mumkin. Login 
 
 Backend porti o‘zgarsa, `frontend/.env.example`ni `.env.local` nomi bilan nusxalang va `VITE_API_PROXY_TARGET`ni o‘zgartiring.
 
+## Telegram bot
+
+Bot `/start` bosgan mehmonni Telegram profili bilan ro‘yxatga oladi, iliq salomlashadi va matn ostida **🍽 Menyuni ko‘rish** tugmasini chiqaradi. Tugma Telegram ichida https://saxovat.easymenu.uz/ menyusini ochadi. `/menu` menyu tugmasini, `/aloqa` esa restoran telefonini ko‘rsatadi. Ro‘yxat telefon/parol yoki keshbek hisobini yaratmaydi.
+
+Backend papkasida `.env.bot.example`ni `.env.bot` nomiga nusxalang va `TELEGRAM_BOT_TOKEN`ni kiriting. Token Gitga kiritilmaydi. Migratsiyalarni bajargach, alohida terminalda botni ishga tushiring:
+
+```powershell
+.\.venv\Scripts\python.exe manage.py migrate
+.\.venv\Scripts\python.exe manage.py run_saxovat_bot
+```
+
+Bot ishlashi uchun kompyuter yoki hostingdagi jarayon doim ishlab turishi kerak. Menyu havolasi `SAXOVAT_MENU_URL` orqali almashtiriladi. Telegram mehmonlari Django adminining **Telegram mehmonlari** bo‘limida ko‘rinadi. Bot cursorni bazada saqlaydi; qayta ishga tushganda eski xabarlarni takroran qayta ishlamaydi. Bir token uchun bitta polling jarayoni ishlating.
+
 ## Tayyorlanish vaqti
 
 Admin → Menyu bo‘limida yangi taomning tayyorlanish vaqtini butun daqiqada kiriting. Mavjud taom jadvalidagi qiymatni o‘zgartirib, **Saqlash**ni bosing. Mehmonlar menyusidagi taom kartasi va batafsil oynada shu vaqt chiqadi. `0` — **Tayyor**.

@@ -4,7 +4,7 @@ Candy Land — Django Admin Registration
 
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import UserProfile, CustomerData, Transaction, MenuItem, ShopLocation, SiteDesign
+from .models import UserProfile, CustomerData, Transaction, MenuItem, ShopLocation, SiteDesign, TelegramGuest
 
 
 @admin.register(UserProfile)
@@ -52,3 +52,13 @@ class ShopLocationAdmin(admin.ModelAdmin):
 @admin.register(SiteDesign)
 class SiteDesignAdmin(admin.ModelAdmin):
     list_display = ("active_design", "manual_override_date", "updated_at")
+
+
+@admin.register(TelegramGuest)
+class TelegramGuestAdmin(admin.ModelAdmin):
+    list_display = ("first_name", "username", "telegram_id", "joined_at", "last_seen_at")
+    search_fields = ("first_name", "username", "telegram_id")
+    readonly_fields = ("telegram_id", "first_name", "last_name", "username", "joined_at", "last_seen_at")
+
+    def has_add_permission(self, request):
+        return False

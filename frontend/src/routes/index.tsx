@@ -162,14 +162,15 @@ function Index() {
 
 
         {/* Delivery contact */}
-        <section aria-labelledby="delivery-heading" className="relative mx-5 mt-7 overflow-hidden rounded-[28px] bg-primary px-5 py-6 text-primary-foreground shadow-[var(--shadow-soft)] min-[480px]:px-7">
+        <section aria-labelledby="delivery-heading" className="relative mx-5 mt-7 min-h-[240px] overflow-hidden rounded-[28px] bg-primary px-5 py-6 text-primary-foreground shadow-[var(--shadow-soft)] min-[480px]:min-h-[260px] min-[480px]:px-7">
           <div className="relative z-10">
             <h2 id="delivery-heading" className="font-display text-[30px] font-bold leading-none"><Link to="/staff-login" aria-label="Saxovat — Admin login" className="inline-flex min-h-11 items-center rounded-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary-foreground">Saxovat</Link></h2>
             <p className="mt-2 text-base font-semibold">Yetkazib berish</p>
-            <a href="tel:+998973530000" className="mt-4 inline-flex min-h-11 items-center whitespace-nowrap text-[22px] font-bold leading-tight tracking-tight underline-offset-4 hover:underline min-[480px]:text-[30px]">+998 97 353-00-00</a>
+            <p className="mt-3 max-w-[56%] text-[12px] leading-[18px] text-primary-foreground/90 min-[480px]:text-sm min-[480px]:leading-5">Mazali taomlar — manzilingizgacha. Buyurtma uchun qo‘ng‘iroq qiling.</p>
           </div>
-          <div aria-hidden="true" className="pointer-events-none absolute right-0 bottom-0 h-full w-[38%] opacity-40">
-            <img src="/delivery.webp" alt="" loading="lazy" decoding="async" width={600} height={600} className="h-full w-full object-cover object-left" />
+          <a href="tel:+998973530000" className="absolute bottom-4 left-5 z-10 inline-flex min-h-11 items-center whitespace-nowrap text-[22px] font-bold leading-tight tracking-tight underline-offset-4 hover:underline min-[480px]:left-7 min-[480px]:text-[30px]">+998 97 353-00-00</a>
+          <div aria-hidden="true" className="pointer-events-none absolute top-3 right-2 h-[168px] w-[44%] min-[360px]:h-[184px] min-[480px]:h-[224px]">
+            <img src="/saxovat-courier.png" alt="" loading="lazy" decoding="async" width={1122} height={1402} className="h-full w-full object-contain object-right" />
           </div>
         </section>
 

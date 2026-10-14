@@ -294,3 +294,25 @@ class Story(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class TelegramGuest(models.Model):
+    telegram_id = models.BigIntegerField(unique=True)
+    first_name = models.CharField(max_length=255, blank=True)
+    last_name = models.CharField(max_length=255, blank=True)
+    username = models.CharField(max_length=255, blank=True)
+    joined_at = models.DateTimeField(auto_now_add=True)
+    last_seen_at = models.DateTimeField()
+
+    class Meta:
+        verbose_name = "Telegram mehmoni"
+        verbose_name_plural = "Telegram mehmonlari"
+        ordering = ["-joined_at"]
+
+    def __str__(self):
+        return self.first_name or str(self.telegram_id)
+
+
+class TelegramBotCursor(models.Model):
+    bot_id = models.BigIntegerField(primary_key=True)
+    last_update_id = models.BigIntegerField(default=-1)
