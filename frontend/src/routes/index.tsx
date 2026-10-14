@@ -161,17 +161,13 @@ function Index() {
         )}
 
 
-        {/* Delivery contact */}
-        <section aria-labelledby="delivery-heading" className="relative mx-5 mt-7 min-h-[240px] overflow-hidden rounded-[28px] bg-primary px-5 py-6 text-primary-foreground shadow-[var(--shadow-soft)] min-[480px]:min-h-[260px] min-[480px]:px-7">
-          <div className="relative z-10">
-            <h2 id="delivery-heading" className="font-display text-[30px] font-bold leading-none"><Link to="/staff-login" aria-label="Saxovat — Admin login" className="inline-flex min-h-11 items-center rounded-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary-foreground">Saxovat</Link></h2>
-            <p className="mt-2 text-base font-semibold">Yetkazib berish</p>
-            <p className="mt-3 max-w-[56%] text-[12px] leading-[18px] text-primary-foreground/90 min-[480px]:text-sm min-[480px]:leading-5">Mazali taomlar — manzilingizgacha. Buyurtma uchun qo‘ng‘iroq qiling.</p>
-          </div>
-          <a href="tel:+998973530000" className="absolute bottom-4 left-5 z-10 inline-flex min-h-11 items-center whitespace-nowrap text-[22px] font-bold leading-tight tracking-tight underline-offset-4 hover:underline min-[480px]:left-7 min-[480px]:text-[30px]">+998 97 353-00-00</a>
-          <div aria-hidden="true" className="pointer-events-none absolute top-3 right-2 h-[168px] w-[44%] min-[360px]:h-[184px] min-[480px]:h-[224px]">
-            <img src="/saxovat-courier.png" alt="" loading="lazy" decoding="async" width={1122} height={1402} className="h-full w-full object-contain object-right" />
-          </div>
+        {/* Restaurant banner; controls align with the supplied artwork. */}
+        <section aria-labelledby="delivery-heading" className="relative mx-5 mt-7 overflow-hidden rounded-[28px] bg-primary shadow-[var(--shadow-soft)]">
+          <h2 id="delivery-heading" className="sr-only">Saxovat — taomlar va yetkazib berish</h2>
+          <img src="/saxovat-food-banner.png" alt="Saxovat. Turk, Uyg‘ur, Yevropa va milliy taomlar. Eng yaxshi ta’mlar — barchasi bir manzilda!" loading="eager" decoding="async" width={1798} height={875} className="block h-auto w-full" />
+          <Link to="/staff-login" aria-label="Saxovat — Admin login" className="absolute top-[4%] left-[5%] h-[25%] min-h-11 w-[28%] rounded-lg focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-[#efbc69]" />
+          <a href="tel:+998973530000" aria-label="Saxovatga qo‘ng‘iroq qilish: +998 97 353-00-00" className="absolute top-[4%] right-[2.5%] h-[23%] min-h-11 w-[25%] rounded-full focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-[#efbc69]" />
+          <button type="button" aria-label="Menyuni ko‘rish" onClick={() => document.getElementById("menu-section")?.scrollIntoView({ behavior: "smooth" })} className="absolute bottom-[10%] left-[4.5%] h-[20%] min-h-11 w-[29%] cursor-pointer rounded-full focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-[#fff8e8]" />
         </section>
 
         {/* Menu */}
@@ -292,7 +288,7 @@ function Index() {
               animate={{ y: 0, opacity: 1, scale: 1 }}
               exit={{ y: 80, opacity: 0, scale: 0.98 }}
               transition={{ type: "spring", damping: 27, stiffness: 320 }}
-              className="relative w-full max-w-md overflow-hidden rounded-t-[30px] bg-[#fffdf5] shadow-2xl sm:rounded-[30px]"
+              className="relative w-full max-w-md overflow-hidden rounded-t-[30px] bg-card shadow-2xl sm:rounded-[30px]"
               onClick={(event) => event.stopPropagation()}
               role="dialog"
               aria-modal="true"
@@ -311,7 +307,7 @@ function Index() {
                 <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/55 to-transparent" />
                 <button
                   onClick={() => setSelectedMenuItem(null)}
-                  className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-white/90 text-foreground shadow-lg backdrop-blur transition-transform active:scale-90"
+                  className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-card/95 text-foreground shadow-lg backdrop-blur transition-transform active:scale-90"
                   aria-label="Yopish"
                 >
                   <X className="h-5 w-5" />
@@ -369,7 +365,7 @@ function Index() {
             <NavBtn icon={<Phone className="h-6 w-6" />} label="Aloqa" active={moreOpen} onClick={() => setMoreOpen(true)} />
           </div>
           {Object.keys(cart).length > 0 && (
-            <div className="pointer-events-none absolute -top-8 left-0 right-0 text-center text-[10px] uppercase tracking-widest text-foreground/40 bg-gradient-to-t from-white to-transparent pt-4">
+            <div className="pointer-events-none absolute -top-8 left-0 right-0 text-center text-[10px] uppercase tracking-widest text-muted-foreground bg-gradient-to-t from-card to-transparent pt-4">
               Savatda {Object.values(cart).reduce((a, b) => a + b, 0)} ta tanlov
             </div>
           )}
@@ -398,7 +394,7 @@ function Index() {
                 <h3 className="font-display text-xl font-bold text-foreground">Bizning restoran</h3>
                 <button
                   onClick={() => setShopsOpen(false)}
-                  aria-label="Yopish" className="grid h-11 w-11 place-items-center rounded-full bg-gray-100 text-muted-foreground transition-colors active:bg-gray-200"
+                  aria-label="Yopish" className="grid h-11 w-11 place-items-center rounded-full bg-secondary text-secondary-foreground transition-colors active:bg-accent"
                 >
                   <X className="h-5 w-5" />
                 </button>
@@ -416,7 +412,7 @@ function Index() {
                 ) : (
                   <div className="flex flex-col gap-4">
                     {shops.map((s) => (
-                      <div key={s.id} className="overflow-hidden rounded-2xl bg-white shadow-sm border border-gray-100 flex flex-col">
+                      <div key={s.id} className="overflow-hidden rounded-2xl bg-card shadow-sm border border-border flex flex-col">
                         <div className="flex h-28 items-center justify-center bg-secondary text-secondary-foreground">
                           <CandyLogo />
                         </div>
@@ -437,7 +433,7 @@ function Index() {
                               href={s.map_link}
                               target="_blank"
                               rel="noreferrer"
-                              className="mt-4 flex items-center justify-center gap-2 w-full rounded-xl bg-[#fffae6] border border-[#f2de99]/50 py-2.5 text-sm font-semibold text-[#420b1a] transition-colors hover:bg-[#f2de99]/20"
+                              className="samarkand-button-secondary mt-4 flex items-center justify-center gap-2 w-full rounded-xl py-2.5 text-sm font-semibold"
                             >
                               Xaritada ko'rish
                             </a>
@@ -486,7 +482,7 @@ function Index() {
                 <h3 className="font-display text-xl font-bold text-foreground">Saxovat</h3>
                 <button
                   onClick={() => setMoreOpen(false)}
-                  aria-label="Yopish" className="grid h-11 w-11 place-items-center rounded-full bg-gray-100 text-muted-foreground transition-colors active:bg-gray-200"
+                  aria-label="Yopish" className="grid h-11 w-11 place-items-center rounded-full bg-secondary text-secondary-foreground transition-colors active:bg-accent"
                 >
                   <X className="h-5 w-5" />
                 </button>
@@ -499,11 +495,11 @@ function Index() {
                     <CandyLogo className="text-primary-foreground [&_.samarkand-wordmark]:text-4xl [&_.samarkand-mark]:h-14 [&_.samarkand-mark]:w-14" />
                   </div>
                   <div className="space-y-3 text-sm relative z-10">
-                     <div className="flex justify-between items-center bg-[#fffdf7]/95 p-3.5 rounded-xl shadow-sm border border-white/50">
+                     <div className="flex justify-between items-center bg-card/95 p-3.5 rounded-xl shadow-sm border border-border">
                         <span className="font-medium text-foreground/60">Ish vaqti</span>
                         <span className="font-bold text-foreground">08:00 - 00:00</span>
                      </div>
-                     <div className="flex justify-between items-center bg-[#fffdf7]/95 p-3.5 rounded-xl shadow-sm border border-white/50">
+                     <div className="flex justify-between items-center bg-card/95 p-3.5 rounded-xl shadow-sm border border-border">
                         <span className="font-medium text-foreground/60">Bog'lanish</span>
                         <a href="tel:+998973530000" className="font-bold text-primary underline-offset-4 hover:underline">+998 97 353-00-00</a>
                      </div>

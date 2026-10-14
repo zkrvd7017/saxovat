@@ -74,10 +74,10 @@
   --card-foreground: oklch(0.336232 0.047898 171.845);
   --popover: oklch(0.985254 0.006942 88.642);
   --popover-foreground: oklch(0.336232 0.047898 171.845);
-  --primary: oklch(0.379789 0.062976 169.843);
-  --primary-hover: oklch(0.315401 0.051227 170.756);
-  --primary-active: oklch(0.269820 0.042049 172.063);
-  --primary-foreground: oklch(1.000000 0.000000 89.876);
+  --primary: oklch(0.262561 0.048521 167.926);
+  --primary-hover: oklch(0.351690 0.069619 162.635);
+  --primary-active: oklch(0.243940 0.046193 165.961);
+  --primary-foreground: oklch(0.970226 0.030007 83.635);
   --secondary: oklch(0.904826 0.020791 121.864);
   --secondary-foreground: oklch(0.332928 0.030325 157.467);
   --muted: oklch(0.934027 0.014638 106.680);
@@ -88,7 +88,7 @@
   --destructive-foreground: oklch(0.984 0.003 247.858);
   --border: oklch(0.913575 0.014762 102.473);
   --input: oklch(0.923397 0.014827 115.052);
-  --ring: oklch(0.379789 0.062976 169.843);
+  --ring: oklch(0.262561 0.048521 167.926);
   --gold: oklch(0.634391 0.077218 78.638);
   --burgundy: oklch(0.379789 0.062976 169.843);
   --cream: oklch(0.985254 0.006942 88.642);
@@ -189,16 +189,17 @@
     color: var(--primary-foreground);
   }
   .samarkand-button-secondary {
-    background-color: var(--secondary);
-    color: var(--secondary-foreground);
-    border: 1px solid var(--border);
+    background-color: var(--primary-hover);
+    color: var(--primary-foreground);
+    border: 1px solid var(--primary-hover);
   }
   @media (hover: hover) {
     .samarkand-button-primary:hover:not(:disabled) { background-color: var(--primary-hover); }
-    .samarkand-button-secondary:hover:not(:disabled) { background-color: var(--accent); }
+    .samarkand-button-secondary:hover:not(:disabled) { background-color: var(--primary); }
   }
   .samarkand-button-primary:active:not(:disabled) { background-color: var(--primary-active); }
-  .samarkand-button-secondary:active:not(:disabled) { background-color: var(--border); }
+  .samarkand-button-secondary:active:not(:disabled) { background-color: var(--primary-active); }
+  .samarkand-button-primary[aria-pressed="true"] { box-shadow: inset 0 0 0 1px var(--gold); }
   .samarkand-button-primary:disabled, .samarkand-button-secondary:disabled { cursor: not-allowed; }
   .samarkand-member-card {
     background: var(--gradient-burgundy);
