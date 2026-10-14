@@ -1,9 +1,9 @@
 // Saxovat restaurant management: menu, stories, staff and table QR.
 
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { QrCode, LayoutDashboard, Settings, Plus, Loader2, LogOut, UserPlus, X, Trash2, UtensilsCrossed, Image, Layers } from "lucide-react";
+import { QrCode, LayoutDashboard, Settings, Plus, Loader2, LogOut, UserPlus, X, Trash2, UtensilsCrossed, Image, Layers, ArrowLeft } from "lucide-react";
 import { QRCodeSVG } from "qrcode.react";
 import { toast } from "sonner";
 import { CandyLogo } from "@/components/CandyLogo";
@@ -394,6 +394,7 @@ function Admin() {
 
         {/* Main */}
         <main className="min-w-0 flex-1 p-4 pb-24 md:p-10 md:pb-10 mt-16 md:mt-0">
+          <Link to="/" className="samarkand-button-secondary mb-5 inline-flex min-h-11 items-center gap-2 rounded-full px-4 text-sm font-semibold"><ArrowLeft className="h-4 w-4" /> Orqaga — menyuga</Link>
           <div className="mb-6 md:mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
               <h1 className="font-display text-3xl font-bold text-primary">Boshqaruv paneli</h1>

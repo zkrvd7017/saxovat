@@ -43,7 +43,7 @@ export const OFFERS = [
     id: "o1",
     title: "Saxovat Delivery",
     subtitle: "Sevimli taomlaringizni nafis qadoqda manzilingizgacha yetkazamiz",
-    bgColor: "bg-[#503a31]",
+    bgColor: "bg-[#174d3d]",
     textColor: "text-white",
     image: "/delivery.webp"
   },
@@ -51,8 +51,8 @@ export const OFFERS = [
     id: "o2",
     title: "Ta’m va an’ana",
     subtitle: "Sevimli taomingizni menyudan tanlang",
-    bgColor: "bg-[#f0dbc7]",
-    textColor: "text-[#352b27]",
+    bgColor: "bg-[#dde2d3]",
+    textColor: "text-[#193f34]",
     image: "/food/kebab.jpg"
   },
 ];

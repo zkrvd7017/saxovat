@@ -1,4 +1,4 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ArrowLeft, Loader2 } from "lucide-react";
 import { toast } from "sonner";
@@ -46,9 +46,9 @@ function StaffLogin() {
     <main className="relative flex min-h-screen items-center justify-center bg-page-background px-5 py-10">
       <SamarkandBackdrop />
       <div className="relative z-10 w-full max-w-sm">
-        <a href="/" className="mb-6 inline-flex min-h-11 items-center gap-2 text-sm text-muted-foreground"><ArrowLeft className="h-4 w-4" /> Restoran menyusi</a>
+        <Link to="/" className="samarkand-button-secondary mb-6 inline-flex min-h-11 items-center gap-2 rounded-full px-4 text-sm font-semibold"><ArrowLeft className="h-4 w-4" /> Orqaga — menyuga</Link>
         <h1 className="font-display text-3xl font-bold text-foreground">Saxovat</h1>
-        <p className="mt-2 mb-6 text-sm text-muted-foreground">Xodimlar uchun boshqaruv</p>
+        <p className="mt-2 mb-6 text-sm text-muted-foreground">Admin login</p>
         <form onSubmit={submit} className="space-y-5 rounded-3xl border border-border bg-card p-6 shadow-[var(--shadow-elegant)]">
           <div>
             <label htmlFor="staff-phone" className="mb-2 block text-sm font-semibold">Telefon raqam</label>

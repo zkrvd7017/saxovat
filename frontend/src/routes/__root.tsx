@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Saxovat — Premium Restaurant" },
       { name: "description", content: "Saxovat — Qashqadaryodagi premium restoran. Menyu, taomlar, manzil va aloqa." },
-      { name: "theme-color", content: "#F6F3EE" },
+      { name: "theme-color", content: "#F5F2E9" },
       { property: "og:title", content: "Saxovat — Premium Restaurant" },
       { property: "og:description", content: "Restoran menyusi va mehmondo‘stlik." },
       { property: "og:type", content: "website" },

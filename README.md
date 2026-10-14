@@ -37,6 +37,8 @@ Sayt: http://127.0.0.1:5180/
 
 Admin kirishi: http://127.0.0.1:5180/staff-login
 
+Bosh sahifadagi **Saxovat** nomini bosib ham admin loginni ochish mumkin. Login va admin panelidagi **Orqaga — menyuga** tugmasi restoran menyusiga qaytaradi.
+
 Backend porti o‘zgarsa, `frontend/.env.example`ni `.env.local` nomi bilan nusxalang va `VITE_API_PROXY_TARGET`ni o‘zgartiring.
 
 ## Tayyorlanish vaqti
